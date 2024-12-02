@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎬🍿😁</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a1a2e;
+            --secondary: #16213e;
+            --accent: #e94560;
+            --accent-hover: #d13551;
+        }
+        
+        body {
+            background-color:black;
+            
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://wallpaper.forfun.com/fetch/02/02e9d4b9081c2c838b2c83432f2f812e.jpeg?w=2500');
+            background-size: cover;
+            background-position: center;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header h1 {
+            font-size: calc(2rem + 2vw);
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .category-card {
+            background-color: var(--secondary);
+            border-radius: 15px;
+            padding: 1.5rem;
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .category-title {
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+        }
+
+        .link-item {
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            word-wrap: break-word;
+        }
+
+        .link-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+
+        .link-item p {
+            font-size: 0.9rem;
+            color: #ccc;
+            margin-bottom: 0.5rem;
+        }
+
+        .browser-info {
+            background-color: var(--accent);
+            color: white;
+            padding: 0.5rem;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            margin: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .watch-button {
+            display: inline-block;
+            width: 100%;
+            padding: 0.8rem;
+            background-color: var(--accent);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: none;
+            margin-top: 0.5rem;
+        }
+
+        .watch-button:hover {
+            background-color: var(--accent-hover);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .report-button {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: var(--accent);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .report-button:hover {
+            background-color: var(--accent-hover);
+            color: white;
+            text-decoration: none;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                min-height: 300px;
+            }
+
+            .report-button {
+                bottom: 1rem;
+                right: 1rem;
+                padding: 0.75rem 1.5rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .category-card {
+                margin-bottom: 1rem;
+            }
+
+            .browser-info {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>🎬 Ciné & Séries Zone 🎬</h1>
+        <p class="lead">Votre espace privé de streaming.</p>
+<p> ⚠️ Ne pas diffuser sur les réseaux ! ⚠️</p>
+    </header>
+
+    <div class="container py-5">
+        <div class="row g-4">
+            <!-- Films Sans Pub -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="category-card">
+                    <h2 class="category-title">
+                        <i class="fas fa-film me-2"></i>Films Sans Pub
+                    </h2>
+                    <div class="link-item">
+                        <h3>Azmip</h3>
+                        <p>Contenu 100% HD sans aucune publicité possible.</p>
+<p> Attention certain ajout peuvent être mis en version québécois ne me demandez pas pourquoi je sais pas 🤷</p>
+                        <div class="browser-info">
+                            <i class="fab fa-chrome"></i>
+                            Chrome recommandé
+                        </div>
+                        <a href="https://Azmip.com" class="watch-button">
+                            <i class="fas fa-play me-2"></i>Regarder
+                        </a>
+                    </div>
+                    <div class="link-item">
+                        <h3>Classics Cinéma</h3>
+                        <p>Collection de films classiques remasterisés en haute définition</p>
+                        <div class="browser-info">
+                            <i class="fab fa-firefox"></i>
+                            Utiliser Firefox pour ce lien
+                        </div>
+                        <a href="#lien-films-classics" class="watch-button">
+                            <i class="fas fa-play me-2"></i>Regarder
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Films Avec Pub -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="category-card">
+                    <h2 class="category-title">
+                        <i class="fas fa-ad me-2"></i>Films Avec Pub
+                    </h2>
+                    <div class="link-item">
+                        <h3>Wiflix</h3>
+                        <p>Films et séries de tout genre. contenu OCS, Netflix, Amazon etc...</p>
+<p> Vérifiez bien qu'il s'agisse bien de qualité HD-light minimum si vous voulez la meilleur expérience possible.
+                        <div class="browser-info">
+                            <i class="fab fa-sistrix"></i>
+                            À utiliser seulement avec Adblock ! 
+</br>Pensez à mettre le navigateur Free Adblocker Browser en navigateur par defaut pour ne pas avoir de soucis de pub.
+                        </div>
+
+                        <a href="https://play.google.com/store/apps/details?id=com.hsv.freeadblockerbrowser" class="watch-button">
+                            <i class="fas fa-play me-2"></i>Télécharger le bloqueur
+                        </a>
+                        <a href="https://wiflix-hd.bio" class="watch-button">
+                            <i class="fas fa-play me-2"></i>Regarder
+</a>
+                    
+                    </div>
+                    <div class="link-item">
+                        <h3>Filmoflix</h3>
+                        <p>Même principe que Wiflix mais avec moins de changement d'adresse et quelques contenu qui diffère de Wiflix. Wiflix reste à privilégier</p>
+                        <div class="browser-info">
+                            <i class="fab fa-sistrix"></i>
+                            À utiliser seulement avec Adblock ! 
+</br>Pensez à mettre le navigateur Free Adblocker Browser en navigateur par defaut pour ne pas avoir de soucis de pub.
+                        </div>
+                        <a href="https://play.google.com/store/apps/details?id=com.hsv.freeadblockerbrowser" class="watch-button">
+                            <i class="fas fa-play me-2"></i>Télécharger le bloqueur
+                        </a>
+                        <a href="https://filmoflix.bz" class="watch-button">
+                            <i class="fas fa-play me-2"></i>Regarder
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Animés -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="category-card">
+                    <h2 class="category-title">
+                        <i class="fas fa-tv me-2"></i>Animés
+                    </h2>
+                    <div class="link-item">
+                        <h3>French Anime</h3>
+                        <p>Mangas et animés de tout genre, contenu Crunchyroll / ADN</p>
+                        <div class="browser-info">
+                            <i class="fab fa-sistrix"></i>
+                                 À utiliser seulement avec Adblock ! 
+</br>Pensez à mettre le navigateur Free Adblocker Browser en navigateur par defaut pour ne pas avoir de soucis de pub.
+                        </div>
+                        <a href="https://play.google.com/store/apps/details?id=com.hsv.freeadblockerbrowser" class="watch-button">
+                            <i class="fas fa-play me-2"></i>Télécharger le bloqueur
+                        </a>
+
+<a href="https://french-anime.com" class="watch-button">
+                            <i class="fas fa-play me-2"></i>Regarder
+                        </a>
+                    </div>
+                    <div class="link-item">
+                        <h3>Animes Ultra</h3>
+                        <p>Manga de tout genre en suppléant à french anime qui n'a pas tout. vous devriez trouver bonheur sur l'un ou l'autre. celui-ci dispose d'une memoire historique pour se souvenir d'où on en est !</p>
+                        <div class="browser-info">
+                            <i class="fab fa-sistrix"></i>
+                            À utiliser seulement avec Adblock ! 
+</br>Pensez à mettre le navigateur Free Adblocker Browser en navigateur par defaut pour ne pas avoir de soucis de pub.
+                        </div>
+<a href="https://play.google.com/store/apps/details?id=com.hsv.freeadblockerbrowser" class="watch-button">
+                            <i class="fas fa-play me-2"></i>Télécharger le bloqueur
+                        </a>
+                        <a href="https://v5.animesultra.net" class="watch-button">
+                            <i class="fas fa-play me-2"></i>Regarder
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="mailto:votre-email@exemple.com?subject=Signalement%20de%20problème" class="report-button">
+        <i class="fas fa-exclamation-triangle me-2"></i>Signaler un problème
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
